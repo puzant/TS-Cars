@@ -1,8 +1,9 @@
 {
     "color": "red",
-    "brand": "Ferrari 458 Italia",
+    "model": "Ferrari 458 Italia",
     "maxSpeed": 325,
     "bodyType": "Coupe",
+    "price": 234000,
     "logo": "https://worldsportlogos.com/wp-content/uploads/2018/03/Ferrari-logo-1990-1996.jpg",
     "img": "https://www.challenges.fr/assets/img/2019/02/28/cover-r4x3w1000-5c77b43d46da7-ferrari-f8-tributo-jpeg.jpg"
 }

@@ -1,3 +1,4 @@
+import {FormatNumber} from './formatNumber'
 export class SpeedUnitConverter {
 
     
@@ -7,9 +8,9 @@ export class SpeedUnitConverter {
       * @param value will always be in Kmph
       */
      public static KmphToMph(value) {
-         let result = 0.6214 * value
+         let result = FormatNumber.addTwoDecimals(0.6214 * value)
          // toFixed converts the number to sting
-         return result.toFixed(2)
+         return result
      }
 
 }
