@@ -1,5 +1,6 @@
 import {IBodyType} from './BodyType'    //  TODO: need to integrate this with Car clsas
 export interface ICar {
+    description: string
     color: string
     model: string
     maxSpeed: number    //  speed is in KM/PH
@@ -10,6 +11,7 @@ export interface ICar {
 }
 
 export class Car {
+    public description: string
     public color: string
     public model: string
     public maxSpeed: number
@@ -19,6 +21,7 @@ export class Car {
     public img: string
     
     constructor (props: ICar) {
+        this.description = props.description
         this.color = props.color
         this.model = props.model
         this.maxSpeed = props.maxSpeed

@@ -6,6 +6,7 @@ import { CarMechanic } from '../../src/CarMechanic';
 // import depencies 
 import { expect } from 'chai'
 import 'mocha'
+
 //  import mock data
 import meterial from '../../src/meterial.json'
 
@@ -22,6 +23,7 @@ describe('Car model', () => {
         //  is everything will be alright *_* 
         expect(car).to.be.instanceOf(Car)
         expect(car.color).to.be.string
+        expect(car.description).to.equal('The Ferrari 458 Italia (Type F142) is a mid-engine sports car produced by the Italian automobile manufacturer Ferrari. The 458 replaced the F430, and was first officially unveiled at the 2009 Frankfurt Motor Show. It was succeeded by the 488, which was unveiled at the 2015 Geneva Motor Show.')
         expect(car.model).to.be.equal("Ferrari 458 Italia")
         expect(car.maxSpeed).to.be.equal(325)
         expect(car.bodyType).to.be.equal("Coupe")
