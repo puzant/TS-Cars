@@ -1,8 +1,8 @@
-import {Car, Icar} from './car'
+import {Car, ICar} from './car'
 
 export class CarFactory {
 
-    static createCar(data: Icar): Car {
+    static createCar(data: ICar): Car {
         return new Car(data)
     }
 }

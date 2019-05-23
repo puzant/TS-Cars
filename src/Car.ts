@@ -1,9 +1,8 @@
-export interface Icar {
+import {IBodyType} from './BodyType'
+export interface ICar {
     color: string
     brand: string
-    isCoupe: boolean
-    maxSpeed: number
-    accelerationTime: number // 0 to 60 
+    maxSpeed: number    //  speed is in KM/PH
     bodyType: string
     logo: string
     img: string
@@ -12,21 +11,22 @@ export interface Icar {
 export class Car {
     public color: string
     public brand: string
-    public isCoupe: boolean
     public maxSpeed: number
-    public accelerationTime: number
     public bodyType: string
     public logo: string
     public img: string
     
-    constructor (props: Icar) {
+    constructor (props: ICar) {
         this.color = props.color
         this.brand = props.brand
-        this.isCoupe = props.isCoupe
         this.maxSpeed = props.maxSpeed
-        this.accelerationTime = props.accelerationTime
         this.bodyType = props.bodyType
         this.logo = props.logo
         this.img = props.img
     }
+
+    public getMaxSpeed() {
+        return this.maxSpeed
+    }
+
 }
