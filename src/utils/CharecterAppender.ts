@@ -1,5 +1,6 @@
 export enum chars {
     DOLLAR = '$',
+    POUND = '£',
     KMPH = 'Km/ph',
     MPH = 'Mph'
 }
@@ -21,6 +22,8 @@ export class CharecterAppender {
                 return value + ' ' + chars.KMPH
             case chars.MPH:
                 return value + ' ' + chars.MPH
+            case chars.POUND:
+                return value + ' ' + chars.POUND
          }
      }
 

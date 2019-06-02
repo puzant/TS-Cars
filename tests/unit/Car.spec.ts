@@ -70,6 +70,11 @@ describe ('Charecter appender', () => {
         expect(chars.DOLLAR).to.equal('$')
     })
 
+    it ('should be equal to £', () => {
+        expect(chars.POUND).to.equal('£')
+    })
+    
+
     it ('should be equal to Km/ph', () => {
         expect(chars.KMPH).to.equal('Km/ph')
     })
@@ -83,15 +88,19 @@ describe ('Charecter appender', () => {
         expect(appendedString).to.equal('23000 $')
     })
 
+    it ('should append £ to the end of the string', () => {
+        const appendedString = CharecterAppender.append(23000, chars.POUND)
+        expect(appendedString).to.equal('23000 £')
+    })
+
     it ('should append Km/ph to the end of the string', () => {
         const appendedString = CharecterAppender.append(201.95, chars.KMPH)
         expect(appendedString).to.equal('201.95 Km/ph')
     })
 
-    it ('should append $ to the end of the string', () => {
+    it ('should append Mph to the end of the string', () => {
         const appendedString = CharecterAppender.append(186.42, chars.MPH)
         expect(appendedString).to.equal('186.42 Mph')
-    })
-
+    })    
 
 })
